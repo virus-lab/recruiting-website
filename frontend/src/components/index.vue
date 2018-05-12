@@ -1,25 +1,27 @@
 <template>
   <div class="hello">
-    <div id="main-typo" class="main-font">
-      <h1 lang="ko">우주기술</h1>
-      <h1 lang="ko">대학생</h1>
-      <h1 lang="ko">창업 아카데미</h1>
-      <h1 lang="en" class="font-color_1">STAR-EXPLORATION</h1>
-    </div>
-    <a id="main-reg" href="#" lang="ko" class="sub-font">참가신청하기</a>
-    <div id="main-day" class="main-font">
-      <h2 id="main-target" class="font-color_1" lang="en">2018. 07. 16</h2>
-      <h2 id="main-countdown" lang="en">
-        <countdown :time="time" :interval="100">
-          <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
-        </countdown>
-        <div>
-          <p class="countdown-sub">day</p>
-          <p class="countdown-sub">hour</p>
-          <p class="countdown-sub">minute</p>
-          <p class="countdown-sub">second</p>
-        </div>
-      </h2>
+    <div class="bg-opacity">
+      <div id="main-typo" class="main-font">
+        <h1 lang="ko">스타트업</h1>
+        <h1 lang="ko">가치&문화 확산</h1>
+        <h1 lang="ko">네트워크</h1>
+        <h1 lang="en" class="font-color_1">VIRUS</h1>
+      </div>
+      <a id="main-reg" href="#" lang="ko" class="sub-font">지원하기</a>
+      <div id="main-day" class="main-font">
+        <h2 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h2>
+        <h2 id="main-countdown" lang="en">
+          <countdown :time="time" :interval="100">
+            <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
+          </countdown>
+          <div>
+            <p class="countdown-sub">day</p>
+            <p class="countdown-sub">hour</p>
+            <p class="countdown-sub">minute</p>
+            <p class="countdown-sub">second</p>
+          </div>
+        </h2>
+      </div>
     </div>
   </div>
 </template>
@@ -30,7 +32,7 @@ export default {
   name: 'index',
   data () {
     var now = new Date()
-    var newYear = new Date(2018, 7, 16)
+    var newYear = new Date(2018, 4, 21)
 
     return {
       counting: false,
@@ -72,18 +74,23 @@ export default {
 
 /* for font-color */
 .font-color_1 {
-  color: #00fcff;
+  color: #7c37fb;
 }
 
 /* for fullscreen */
 .hello {
-  background-image: url("./../assets/bg_space.jpg");
+  background-image: url("./../assets/bg_full_2.jpeg");
 
   height: 100%;
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bg-opacity {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
 }
 
 /* for main-typo */
@@ -107,11 +114,14 @@ export default {
   padding-top: 50px;
 }
 
+#main-typo h1:last-child {
+  font-size: 68px;
+}
 #main-day {
   position: absolute;
   bottom: 0px;
   right: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #main-target {
@@ -144,7 +154,7 @@ export default {
 .countdown-sub {
   font-size: 12px;
   border-top: 1.5px solid #00fcff;
-  width: 70px;
+  width: 65px;
   text-align: center;
   height: 30px;
   line-height: 2.4em;
