@@ -22,6 +22,14 @@
           </div>
         </h2>
       </div>
+      <div id="main-bg-assets">
+        <img id="bg_assets_1" src="./../assets/bg_assets_1.png" />
+        <img id="bg_assets_2" src="./../assets/bg_assets_2.png" />
+        <img id="bg_assets_3" src="./../assets/bg_assets_3.png" />
+        <img id="bg_assets_4" src="./../assets/bg_assets_4.png" />
+        <img id="bg_assets_5" src="./../assets/bg_assets_5.png" />
+        <img id="bg_assets_6" src="./../assets/bg_assets_6.png" />
+      </div>
     </div>
   </div>
 </template>
@@ -89,7 +97,7 @@ export default {
 }
 
 .bg-opacity {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100%;
 }
 
@@ -154,7 +162,7 @@ export default {
 .countdown-sub {
   font-size: 12px;
   border-top: 1.5px solid #00fcff;
-  width: 65px;
+  width: 70px;
   text-align: center;
   height: 30px;
   line-height: 2.4em;
@@ -219,6 +227,27 @@ export default {
     position: absolute;
     margin-left: -150px;
   }
+}
+
+#main-bg-assets img {
+  position: absolute;
+  width: 150px;
+}
+
+#bg_assets_1 {
+  /* s */
+  left: 30%;
+  bottom: 5%;
+}
+
+#bg_assets_2 {
+  /* triangle */
+  top: 40%;
+  right: 10%;
+}
+
+#bg_assets_3 {
+
 }
 
 </style>
