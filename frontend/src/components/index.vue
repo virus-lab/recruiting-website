@@ -191,6 +191,7 @@ export default {
 h1 {
   font-size: 60px;
   font-weight: 800;
+  line-height: 1.3em;
 }
 
 .sub-font {
@@ -354,6 +355,9 @@ h1 {
   .main-font {
     font-size: 40px;
   }
+  h1 {
+    font-size: 40px;
+  }
   .sub-font {
     font-size: 24px;
   }
@@ -400,6 +404,9 @@ h1 {
 /* for iphone 5 */
 @media screen and (max-height: 600px) {
   .main-font {
+    font-size: 30px;
+  }
+  h1 {
     font-size: 30px;
   }
   #main-typo {
