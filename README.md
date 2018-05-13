@@ -1,8 +1,5 @@
 # recruiting-website
 
-## Install
-Install [mongoDB](https://www.mongodb.com/).
-
 ## Usage
 
 ### frontend
@@ -38,7 +35,7 @@ or
 ```
 backend$ DEBUG=backend:* npm start
 ```
-> http://localhost:3000
+> http://localhost
 
 ## Server
 
@@ -57,6 +54,3 @@ backend# forever start --minUptime 1000 --spinSleepTime 1000 ./bin/www
 backend# forever list
 backend# forever stop 0
 ```
-
-## Reference
-[[Node.js] mongoDB , node.js, vue.js 를 통한 CURD(로그인, 회원가입)](https://m.blog.naver.com/kangminser88/221152151491)  
