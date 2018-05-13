@@ -67,11 +67,12 @@ table {
 }
 
 /* for fullscreen */
-
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 </style>
