@@ -29,8 +29,8 @@
     </div>
     <a id="main-reg" href="https://goo.gl/forms/hYtd61wA9poKXCre2" lang="ko" class="sub-font">지원하기</a>
     <div id="main-day" class="main-font">
-      <h2 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h2>
-      <h2 id="main-countdown" lang="en">
+      <h1 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h1>
+      <h1 id="main-countdown" lang="en">
         <countdown :time="time" :interval="100">
           <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
         </countdown>
@@ -40,7 +40,7 @@
           <p class="countdown-sub">minute</p>
           <p class="countdown-sub">second</p>
         </div>
-      </h2>
+      </h1>
     </div>
     <div id="main-bg-assets">
       <img id="bg_assets_1" src="./../assets/bg_assets_1.png" />
@@ -186,6 +186,11 @@ export default {
   font-weight: 800;
   color: white;
   line-height: 1.3em;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 800;
 }
 
 .sub-font {
