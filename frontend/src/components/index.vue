@@ -24,11 +24,23 @@
       </div>
       <div id="main-bg-assets">
         <img id="bg_assets_1" src="./../assets/bg_assets_1.png" />
+        <img id="bg_assets_1_2" src="./../assets/bg_assets_1.png" />
         <img id="bg_assets_2" src="./../assets/bg_assets_2.png" />
         <img id="bg_assets_3" src="./../assets/bg_assets_3.png" />
+        <img id="bg_assets_3_1" src="./../assets/bg_assets_3.png" />
         <img id="bg_assets_4" src="./../assets/bg_assets_4.png" />
+        <img id="bg_assets_4_1" src="./../assets/bg_assets_4.png" />
         <img id="bg_assets_5" src="./../assets/bg_assets_5.png" />
         <img id="bg_assets_6" src="./../assets/bg_assets_6.png" />
+        <img id="bg_assets_7" src="./../assets/bg_assets_7.png" />
+        <img id="bg_assets_7_1" src="./../assets/bg_assets_7.png" />
+      </div>
+      <div id="main-logos">
+        <img src="./../assets/virus-logo-white.png" />
+        <br/>
+        <img src="./../assets/virus-logo-border.png" />
+        <br/>
+        <img src="./../assets/virus-logo-white.png" />
       </div>
     </div>
   </div>
@@ -85,19 +97,17 @@ export default {
   color: #7c37fb;
 }
 
-/* for fullscreen */
+/* for fullscreen - background */
 .hello {
   background-image: url("./../assets/bg_full_2.jpeg");
-
   height: 100%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .bg-opacity {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
 }
 
@@ -155,13 +165,13 @@ export default {
 }
 
 #main-reg:hover {
-  border: 8px solid #00fcff;
-  color: #00fcff;
+  border: 8px solid #7c37fb;
+  color: #7c37fb;
 }
 
 .countdown-sub {
   font-size: 12px;
-  border-top: 1.5px solid #00fcff;
+  border-top: 1.5px solid #7c37fb;
   width: 70px;
   text-align: center;
   height: 30px;
@@ -176,6 +186,94 @@ export default {
   visibility: visible;
 }
 
+#main-logos {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+
+#main-logos img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+/* bg-assets */
+#main-bg-assets img {
+  position: absolute;
+  width: 100px;
+}
+
+#bg_assets_1 {
+  /* s */
+  left: 40%;
+  bottom: 5%;
+}
+
+#bg_assets_1_2 {
+  top: 50px;
+  left: 30%;
+}
+
+#bg_assets_2 {
+  /* triangle */
+  top: 40%;
+  right: 15%;
+}
+
+#bg_assets_3 {
+  /* r */
+  top: 20%;
+  right: 30%;
+}
+
+#bg_assets_3_1 {
+  /* r */
+  bottom: 20px;
+  left: 20px;
+  -ms-transform: rotate(60deg); /* IE 9 */
+  -webkit-transform: rotate(60deg); /* Safari 3-8 */
+  transform: rotate(60deg);
+}
+
+#bg_assets_4 {
+  /* i */
+  top: 60%;
+  right: 30%;
+}
+
+#bg_assets_4_1 {
+  left: 30px;
+  top: 50%;
+}
+#bg_assets_5 {
+  /* vv */
+  top: 300px;
+  left: 30%;
+}
+
+#bg_assets_6 {
+  /* u */
+  left: 25%;
+  bottom: 20%;
+}
+
+#bg_assets_7 {
+  /* v */
+  left: 50%;
+  top: 50px;
+}
+
+#bg_assets_7_1 {
+  /* v */
+  top: 55%;
+  right: 30px;
+  -ms-transform: rotate(40deg); /* IE 9 */
+  -webkit-transform: rotate(40deg); /* Safari 3-8 */
+  transform: rotate(40deg);
+}
+
+/* for responsive */
+/* for phone */
 @media screen and (max-width: 768px) {
   .main-font {
     font-size: 40px;
@@ -205,7 +303,7 @@ export default {
   }
   .countdown-sub {
     font-size: 6px;
-    border-top: 1.5px solid #00fcff;
+    border-top: 1.5px solid #7c37fb;
     width: 48px;
     text-align: center;
     height: 30px;
@@ -215,8 +313,15 @@ export default {
     visibility: hidden;
     font-family: 'campton-lightdemo', sans-serif;
   }
+  #main-logos {
+    visibility: hidden;
+  }
+  #main-bg-assets {
+    visibility: hidden;
+  }
 }
 
+/* for iphone 5 */
 @media screen and (max-height: 600px) {
   .main-font {
     font-size: 30px;
@@ -228,26 +333,4 @@ export default {
     margin-left: -150px;
   }
 }
-
-#main-bg-assets img {
-  position: absolute;
-  width: 150px;
-}
-
-#bg_assets_1 {
-  /* s */
-  left: 30%;
-  bottom: 5%;
-}
-
-#bg_assets_2 {
-  /* triangle */
-  top: 40%;
-  right: 10%;
-}
-
-#bg_assets_3 {
-
-}
-
 </style>
