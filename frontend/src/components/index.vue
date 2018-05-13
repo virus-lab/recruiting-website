@@ -27,7 +27,7 @@
       <h1 lang="ko">네트워크</h1>
       <h1 lang="en" class="font-color_1">VIRUS</h1>
     </div>
-    <a id="main-reg" href="#" lang="ko" class="sub-font">지원하기</a>
+    <a id="main-reg" href="https://goo.gl/forms/hYtd61wA9poKXCre2" lang="ko" class="sub-font">지원하기</a>
     <div id="main-day" class="main-font">
       <h2 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h2>
       <h2 id="main-countdown" lang="en">
