@@ -1,53 +1,71 @@
 <template>
-  <div class="hello">
+  <div class="main">
+
+    <b-carousel id="main-carousel" indicators :interval="4000">
+      <b-carousel-slide img-blank id="main-carousel-s1">
+      </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s2">
+      </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s3">
+      </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s4">
+      </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s5">
+      </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s6">
+      </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s7">
+      </b-carousel-slide>
+    </b-carousel>
+
     <div class="bg-opacity">
-      <div id="main-typo" class="main-font">
-        <h1 lang="ko">스타트업</h1>
-        <h1 lang="ko">가치&문화 확산</h1>
-        <h1 lang="ko">네트워크</h1>
-        <h1 lang="en" class="font-color_1">VIRUS</h1>
-      </div>
-      <a id="main-reg" href="#" lang="ko" class="sub-font">지원하기</a>
-      <div id="main-day" class="main-font">
-        <h2 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h2>
-        <h2 id="main-countdown" lang="en">
-          <countdown :time="time" :interval="100">
-            <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
-          </countdown>
-          <div>
-            <p class="countdown-sub">day</p>
-            <p class="countdown-sub">hour</p>
-            <p class="countdown-sub">minute</p>
-            <p class="countdown-sub">second</p>
-          </div>
-        </h2>
-      </div>
-      <div id="main-bg-assets">
-        <img id="bg_assets_1" src="./../assets/bg_assets_1.png" />
-        <img id="bg_assets_1_2" src="./../assets/bg_assets_1.png" />
-        <img id="bg_assets_2" src="./../assets/bg_assets_2.png" />
-        <img id="bg_assets_3" src="./../assets/bg_assets_3.png" />
-        <img id="bg_assets_3_1" src="./../assets/bg_assets_3.png" />
-        <img id="bg_assets_4" src="./../assets/bg_assets_4.png" />
-        <img id="bg_assets_4_1" src="./../assets/bg_assets_4.png" />
-        <img id="bg_assets_5" src="./../assets/bg_assets_5.png" />
-        <img id="bg_assets_6" src="./../assets/bg_assets_6.png" />
-        <img id="bg_assets_7" src="./../assets/bg_assets_7.png" />
-        <img id="bg_assets_7_1" src="./../assets/bg_assets_7.png" />
-      </div>
-      <div id="main-logos">
-        <img src="./../assets/virus-logo-white.png" />
-        <br/>
-        <img src="./../assets/virus-logo-border.png" />
-        <br/>
-        <img src="./../assets/virus-logo-white.png" />
-      </div>
+    </div>
+
+    <div id="main-typo" class="main-font">
+      <h1 lang="ko">스타트업</h1>
+      <h1 lang="ko">가치&문화 확산</h1>
+      <h1 lang="ko">네트워크</h1>
+      <h1 lang="en" class="font-color_1">VIRUS</h1>
+    </div>
+    <a id="main-reg" href="#" lang="ko" class="sub-font">지원하기</a>
+    <div id="main-day" class="main-font">
+      <h2 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h2>
+      <h2 id="main-countdown" lang="en">
+        <countdown :time="time" :interval="100">
+          <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
+        </countdown>
+        <div>
+          <p class="countdown-sub">day</p>
+          <p class="countdown-sub">hour</p>
+          <p class="countdown-sub">minute</p>
+          <p class="countdown-sub">second</p>
+        </div>
+      </h2>
+    </div>
+    <div id="main-bg-assets">
+      <img id="bg_assets_1" src="./../assets/bg_assets_1.png" />
+      <img id="bg_assets_1_2" src="./../assets/bg_assets_1.png" />
+      <img id="bg_assets_2" src="./../assets/bg_assets_2.png" />
+      <img id="bg_assets_3" src="./../assets/bg_assets_3.png" />
+      <img id="bg_assets_3_1" src="./../assets/bg_assets_3.png" />
+      <img id="bg_assets_4" src="./../assets/bg_assets_4.png" />
+      <img id="bg_assets_4_1" src="./../assets/bg_assets_4.png" />
+      <img id="bg_assets_5" src="./../assets/bg_assets_5.png" />
+      <img id="bg_assets_6" src="./../assets/bg_assets_6.png" />
+      <img id="bg_assets_7" src="./../assets/bg_assets_7.png" />
+      <img id="bg_assets_7_1" src="./../assets/bg_assets_7.png" />
+    </div>
+    <div id="main-logos">
+      <img src="./../assets/virus-logo-white.png" />
+      <br/>
+      <img src="./../assets/virus-logo-border.png" />
+      <br/>
+      <img src="./../assets/virus-logo-white.png" />
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'index',
   data () {
@@ -60,11 +78,11 @@ export default {
     }
   }
 }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 /* for fonts */
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
@@ -97,9 +115,58 @@ export default {
   color: #7c37fb;
 }
 
-/* for fullscreen - background */
-.hello {
+/* for carousel fullscreen - background */
+#main-carousel {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#main-carousel-s1 {
+  background-image: url("./../assets/bg_full_1.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s2 {
   background-image: url("./../assets/bg_full_2.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s3 {
+  background-image: url("./../assets/bg_full_3.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s4 {
+  background-image: url("./../assets/bg_full_4.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s5 {
+  background-image: url("./../assets/bg_full_5.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s6 {
+  background-image: url("./../assets/bg_full_6.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s7 {
+  background-image: url("./../assets/bg_full_7.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -109,6 +176,8 @@ export default {
 .bg-opacity {
   background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 /* for main-typo */
@@ -128,6 +197,8 @@ export default {
 }
 
 #main-typo {
+  position: absolute;
+  top: 0px;
   padding-left: 50px;
   padding-top: 50px;
 }

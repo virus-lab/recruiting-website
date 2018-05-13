@@ -6,7 +6,14 @@ import router from './router'
 
 import VueCountdown from '@xkeshi/vue-countdown'
 
+import BootstrapVue from 'bootstrap-vue'
+
+import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 Vue.component('countdown', VueCountdown)
+
+Vue.use(BootstrapVue)
 
 Vue.config.productionTip = false
 

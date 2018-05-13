@@ -73,6 +73,17 @@ body, html {
   padding: 0;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* for mobile carousel */
+.carousel-inner {
+  height: 100%;
+}
+
+/* for chrome blue box */
+*:focus {
+    outline: none;
 }
 
 </style>
