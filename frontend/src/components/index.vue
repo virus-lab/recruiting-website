@@ -278,6 +278,9 @@ h1 {
 #main-bg-assets img {
   position: absolute;
   width: 100px;
+  animation-timing-function: ease-in-out;
+  animation: assets 2s infinite alternate;
+  -webkit-animation: assets 2s infinite alternate;
 }
 
 #bg_assets_1 {
@@ -322,6 +325,7 @@ h1 {
   left: 30px;
   top: 50%;
 }
+
 #bg_assets_5 {
   /* vv */
   top: 300px;
@@ -347,6 +351,11 @@ h1 {
   -ms-transform: rotate(40deg); /* IE 9 */
   -webkit-transform: rotate(40deg); /* Safari 3-8 */
   transform: rotate(40deg);
+}
+
+@keyframes assets {
+  0% { margin-top: 0px; margin-bottom: 25px;}
+  100% { margin-top: 25px; margin-bottom: 0px;}
 }
 
 /* for responsive */
