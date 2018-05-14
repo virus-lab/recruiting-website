@@ -11,9 +11,15 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 // import 'bootstrap-vue/dist/bootstrap-vue.css'
 
+import VueAnalytics from 'vue-analytics'
+
 Vue.component('countdown', VueCountdown)
 
 Vue.use(BootstrapVue)
+
+Vue.use(VueAnalytics, {
+  id: 'UA-93918089-4'
+})
 
 Vue.config.productionTip = false
 
