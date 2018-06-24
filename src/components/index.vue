@@ -29,7 +29,7 @@
     </div>
     <a id="main-reg" href="https://goo.gl/forms/hYtd61wA9poKXCre2" lang="ko" class="sub-font">지원하기</a>
     <div id="main-day" class="main-font">
-      <h1 id="main-target" class="font-color_1" lang="en">2018. 05. 20</h1>
+      <h1 id="main-target" class="font-color_1" lang="en">2018. 06. 03</h1>
       <h1 id="main-countdown" lang="en">
         <countdown :time="time" :interval="100">
           <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
@@ -70,7 +70,7 @@ export default {
   name: 'index',
   data () {
     var now = new Date()
-    var newYear = new Date(2018, 4, 21)
+    var newYear = new Date(2018, 6, 4)
 
     return {
       counting: false,
@@ -112,7 +112,7 @@ export default {
 
 /* for font-color */
 .font-color_1 {
-  color: #7c37fb;
+  color: white;
 }
 
 /* for carousel fullscreen - background */
@@ -174,7 +174,8 @@ export default {
 }
 
 .bg-opacity {
-  background-color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient( 45deg, rgba(130, 6, 201, 0.8), rgba(50, 161, 255, 0.8) );
+  /* background-color: rgba(0, 0, 0, 0.8); */
   height: 100%;
   position: absolute;
   width: 100%;
@@ -242,13 +243,13 @@ h1 {
 }
 
 #main-reg:hover {
-  border: 8px solid #7c37fb;
-  color: #7c37fb;
+  border: 8px solid #00fcff;
+  color: #00fcff;
 }
 
 .countdown-sub {
   font-size: 12px;
-  border-top: 1.5px solid #7c37fb;
+  border-top: 1.5px solid white;
   width: 70px;
   text-align: center;
   height: 30px;
@@ -392,7 +393,7 @@ h1 {
   }
   .countdown-sub {
     font-size: 6px;
-    border-top: 1.5px solid #7c37fb;
+    border-top: 1.5px solid white;
     width: 48px;
     text-align: center;
     height: 30px;
