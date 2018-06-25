@@ -29,7 +29,7 @@
     </div>
     <a id="main-reg" href="https://goo.gl/forms/hYtd61wA9poKXCre2" lang="ko" class="sub-font">지원하기</a>
     <div id="main-day" class="main-font">
-      <h1 id="main-target" class="font-color_1" lang="en">2018. 06. 03</h1>
+      <h1 id="main-target" class="font-color_1" lang="en">2018. 07. 03</h1>
       <h1 id="main-countdown" lang="en">
         <countdown :time="time" :interval="100">
           <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>

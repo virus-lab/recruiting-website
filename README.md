@@ -11,7 +11,7 @@ $ npm install
 ```
 $ npm run dev
 ```
-> http://0.0.0.0:8080
+> http://0.0.0.0:8080 OR http://localhost:8080  
 
 #### Release
 
