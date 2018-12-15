@@ -29,7 +29,7 @@
     </div>
     <a id="main-reg" href="https://goo.gl/forms/ckhf04oYu1YOpuZH3" lang="ko" class="sub-font">지원하기</a>
     <div id="main-day" class="main-font">
-      <h1 id="main-target" class="font-color_1" lang="en">2018. 07. 03</h1>
+      <h1 id="main-target" class="font-color_1" lang="en">2018. 12. 30</h1>
       <h1 id="main-countdown" lang="en">
         <countdown :time="time" :interval="100">
           <template slot-scope="props">{{ props.days }}:{{ props.hours }}:{{ props.minutes }}:{{ props.seconds.split('.')[0] }}</template>
@@ -70,7 +70,7 @@ export default {
   name: 'index',
   data () {
     var now = new Date()
-    var newYear = new Date(2018, 6, 4)
+    var newYear = new Date(2018, 11, 31)
 
     return {
       counting: false,
