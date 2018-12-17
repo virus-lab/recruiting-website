@@ -16,6 +16,8 @@
       </b-carousel-slide>
       <b-carousel-slide img-blank id="main-carousel-s7">
       </b-carousel-slide>
+      <b-carousel-slide img-blank id="main-carousel-s8">
+      </b-carousel-slide>
     </b-carousel>
 
     <div class="bg-opacity">
@@ -167,6 +169,13 @@ export default {
 }
 #main-carousel-s7 {
   background-image: url("./../assets/bg_full_7.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-carousel-s8 {
+  background-image: url("./../assets/bg_full_8.jpeg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
